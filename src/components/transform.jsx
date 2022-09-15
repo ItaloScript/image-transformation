@@ -9,7 +9,7 @@ export default function Transform({ image, setTransformedImage, imageRef }) {
     async function ApplyTransformation() {
         const formData = new FormData();
         formData.append('image', imageRef.current)
-        const data = await axios.post("http://localhost:5000" + selected.route, formData, {
+        const data = await axios.post("https://image-transformation.herokuapp.com" + selected.route, formData, {
             headers: {
                 'content-type': 'multipart/form-data'
             },
