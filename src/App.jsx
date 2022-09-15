@@ -14,7 +14,7 @@ function App() {
                 <div className="row">
                     <div className="col-lg-6" style={{minHeight:'500px'}} >
                         <div className="position-relative h-100">
-                            <img className="position-absolute w-100 h-100" style={{objectFit:"contain"}} src={transformedImage || image || "./src/img/empty.jpg"} />
+                            <img className="position-absolute w-100 h-100" style={{objectFit:"contain"}} src={transformedImage || image || "empty.jpg"} />
                         </div>
                     </div>
                     {
