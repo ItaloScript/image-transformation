@@ -54,7 +54,7 @@ const transformations = [
     },
     {
         title: "Fatiamento por plano de bits",
-        route: "/piecewise",
+        route: "/bit-plane",
     },
     {
         title: "Equalização de histograma (local)",
