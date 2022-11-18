@@ -88,4 +88,24 @@ const transformations = [
         title: "Filtro Roberts",
         route: "/roberts"
     },
+    {
+        title: "Erosion",
+        route: "/erosion"
+    },
+    {
+        title: "Dilation",
+        route: "/dilation"
+    },
+    {
+        title: "Opening",
+        route: "/opening"
+    },
+    {
+        title: "Closing",
+        route: "/closing"
+    },
+    {
+        title: "Hit or Miss",
+        route: "/hitOrMiss"
+    }
 ]
