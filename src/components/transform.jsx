@@ -107,5 +107,25 @@ const transformations = [
     {
         title: "Hit or Miss",
         route: "/hitOrMiss"
+    },
+    {
+        tittle: "Boundary Extraction",
+        route: "/boundaryExtraction"
+    },
+    {
+        tittle: "Hole Filling",
+        route: "/holeFilling"
+    },
+    {
+        tittle: "Connected Components",
+        route: "/connectedComponents"
+    },
+    {
+        tittle: "Water Shed",
+        route: "/waterShed"
+    },
+    {
+        tittle: "Region Growing",
+        route: "/regionGrowing"
     }
 ]
