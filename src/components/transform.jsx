@@ -9,7 +9,7 @@ export default function Transform({ image, setTransformedImage, imageRef }) {
     async function ApplyTransformation() {
         const formData = new FormData();
         formData.append('image', imageRef.current)
-        const data = await axios.post("https://image-transformation.herokuapp.com" + selected.route, formData, {
+        const data = await axios.post("http://localhost:5000" + selected.route, formData, {
             headers: {
                 'content-type': 'multipart/form-data'
             },
@@ -89,19 +89,19 @@ const transformations = [
         route: "/roberts"
     },
     {
-        title: "Erosion",
+        title: "Erosão",
         route: "/erosion"
     },
     {
-        title: "Dilation",
+        title: "Dilatação",
         route: "/dilation"
     },
     {
-        title: "Opening",
+        title: "Abertura",
         route: "/opening"
     },
     {
-        title: "Closing",
+        title: "Fechamento",
         route: "/closing"
     },
     {
@@ -109,23 +109,51 @@ const transformations = [
         route: "/hitOrMiss"
     },
     {
-        tittle: "Boundary Extraction",
+        title: "Extração de Fronteiras",
         route: "/boundaryExtraction"
     },
     {
-        tittle: "Hole Filling",
+        title: "Preenchimento de Buracos",
         route: "/holeFilling"
     },
     {
-        tittle: "Connected Components",
+        title: "Componentes Conexos",
         route: "/connectedComponents"
     },
     {
-        tittle: "Water Shed",
-        route: "/waterShed"
+        title: "Prewitt",
+        route: "/prewitt"
     },
     {
-        tittle: "Region Growing",
+        title: "Gradiente com Limiarização",
+        route: "/gradientThresholding"
+    },
+    {
+        title: "Marr-Hildreth",
+        route: "/marrHildrethFilter"
+    },
+    {
+        title: "Canny",
+        route: "/cannyFilter"
+    },
+    {
+        title: "Transformada de Hough",
+        route: "/houghTransform"
+    },
+    {
+        title: "Método de Otsu",
+        route: "/otsuThresholding"
+    },
+    {
+        title: "Médias Móveis",
+        route: "/movingAverageFilter"
+    },
+    {
+        title: "Crescimento de Região",
         route: "/regionGrowing"
+    },
+    {
+        title: "Water Shed",
+        route: "/watershed"
     }
 ]
